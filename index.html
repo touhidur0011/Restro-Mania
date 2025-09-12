@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restro Mania - Revolutionary Restaurant Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loader.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-text">
+                <div class="loader-text-inner">R</div>
+                <div class="loader-text-inner">e</div>
+                <div class="loader-text-inner">s</div>
+                <div class="loader-text-inner">t</div>
+                <div class="loader-text-inner">r</div>
+                <div class="loader-text-inner">o</div>
+                <div class="loader-text-inner space"></div>
+                <div class="loader-text-inner">M</div>
+                <div class="loader-text-inner">a</div>
+                <div class="loader-text-inner">n</div>
+                <div class="loader-text-inner">i</div>
+                <div class="loader-text-inner">a</div>
+            </div>
+            <div class="loader-progress">
+                <div class="loader-progress-bar"></div>
+                <div class="loader-counter">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loader-overlay" id="loaderOverlay"></div>
+    <canvas id="particleCanvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;"></canvas>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Restro Mania</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="floating-shapes">
+            <div class="shape" style="width: 300px; height: 300px; top: 10%; left: 5%;"></div>
+            <div class="shape" style="width: 200px; height: 200px; bottom: 20%; right: 10%;"></div>
+            <div class="shape" style="width: 150px; height: 150px; top: 60%; left: 70%;"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to Restro Mania</h1>
+            <p class="tagline">Revolutionizing Restaurant Management Solutions</p>
+            <div class="cta-buttons">
+                <a href="#products" class="btn btn-primary">Explore Products</a>
+                <a href="#contact" class="btn btn-secondary">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2 class="section-title">Our Products</h2>
+        <p class="section-subtitle">Complete suite of restaurant management solutions</p>
+        
+        <div class="product-slider">
+            <div class="product-container" id="productContainer">
+                <div class="product-card active">
+                    <div class="product-info">
+                        <h3>Restro Track</h3>
+                        <p>Complete POS system for modern restaurants. Track sales, manage menus, generate receipts, and monitor financial history with ease.</p>
+                        <ul class="product-features">
+                            <li>Real-time sales tracking and analytics</li>
+                            <li>Dynamic menu management system</li>
+                            <li>Instant receipt generation</li>
+                            <li>Complete financial history</li>
+                            <li>Multi-location support</li>
+                            <li>Cloud-based data sync</li>
+                        </ul>
+                        <div class="product-actions">
+                            <a href="#" class="download-btn">📱 Demo Video</a>
+                            <a href="#" class="download-btn">🪟 Windows</a>
+                            <a href="#" class="download-btn">🍎 Mac</a>
+                            <a href="#" class="download-btn">🌐 Web App</a>
+                        </div>
+                    </div>
+                    <div class="product-visual">
+                        <div class="demo-screen">
+                            <div class="demo-content"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-info">
+                        <h3>Restro Reserve</h3>
+                        <p>Advanced table reservation and customer management system. Optimize seating, reduce wait times, and enhance customer experience.</p>
+                        <ul class="product-features">
+                            <li>Smart table allocation algorithm</li>
+                            <li>Real-time availability tracking</li>
+                            <li>Customer preference management</li>
+                            <li>Waitlist optimization</li>
+                            <li>SMS & Email notifications</li>
+                            <li>Integration with Restro Track</li>
+                        </ul>
+                        <div class="product-actions">
+                            <a href="#" class="download-btn">📱 Demo Video</a>
+                            <a href="#" class="download-btn">🪟 Windows</a>
+                            <a href="#" class="download-btn">🍎 Mac</a>
+                            <a href="#" class="download-btn">🌐 Web App</a>
+                        </div>
+                    </div>
+                    <div class="product-visual">
+                        <div class="demo-screen">
+                            <div class="demo-content"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-info">
+                        <h3>Restro Insights</h3>
+                        <p>AI-powered analytics and business intelligence platform. Make data-driven decisions with predictive insights and trend analysis.</p>
+                        <ul class="product-features">
+                            <li>Predictive sales forecasting</li>
+                            <li>Customer behavior analytics</li>
+                            <li>Inventory optimization AI</li>
+                            <li>Staff performance metrics</li>
+                            <li>Custom report generation</li>
+                            <li>Real-time dashboard</li>
+                        </ul>
+                        <div class="product-actions">
+                            <a href="#" class="download-btn">📱 Demo Video</a>
+                            <a href="#" class="download-btn">🪟 Windows</a>
+                            <a href="#" class="download-btn">🍎 Mac</a>
+                            <a href="#" class="download-btn">🌐 Web App</a>
+                        </div>
+                    </div>
+                    <div class="product-visual">
+                        <div class="demo-screen">
+                            <div class="demo-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-arrows">
+                <div class="arrow" id="prevArrow">←</div>
+                <div class="arrow" id="nextArrow">→</div>
+            </div>
+        </div>
+
+        <div class="slider-controls">
+            <span class="slider-dot active" data-slide="0"></span>
+            <span class="slider-dot" data-slide="1"></span>
+            <span class="slider-dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2 class="section-title">Why Choose Restro Mania</h2>
+        <p class="section-subtitle">Industry-leading features for modern restaurants</p>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Real-time Analytics</h3>
+                <p>Monitor your restaurant's performance with live dashboards and instant insights into sales, inventory, and customer patterns.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">☁️</div>
+                <h3>Cloud Integration</h3>
+                <p>Access your data from anywhere with secure cloud storage and automatic backups. Never lose important business data.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Bank-level Security</h3>
+                <p>Your data is protected with enterprise-grade encryption and security protocols to ensure complete privacy and protection.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Multi-platform Support</h3>
+                <p>Works seamlessly across Windows, Mac, iOS, Android, and web browsers for maximum flexibility and accessibility.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Lightning Fast</h3>
+                <p>Optimized performance ensures smooth operations even during peak hours with instant response times.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>24/7 Support</h3>
+                <p>Our dedicated support team is always available to help you with any questions or technical assistance you need.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get Started Today</h2>
+        <p class="section-subtitle">Transform your restaurant management with Restro Mania</p>
+        
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <input type="text" placeholder="Restaurant Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group">
+                <textarea rows="5" placeholder="Tell us about your needs..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Request Demo</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">Restro Mania</div>
+            <p>© 2024 Restro Mania. All rights reserved.</p>
+            <div class="social-links">
+                <div class="social-link">f</div>
+                <div class="social-link">t</div>
+                <div class="social-link">in</div>
+                <div class="social-link">ig</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js"></script>
+    <script src="floating-particles.js"></script>
+    <script src="section-animations.js"></script>
+</body>
+</html>

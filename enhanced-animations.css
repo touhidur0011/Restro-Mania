@@ -1,0 +1,72 @@
+.mouse-particle {
+    position: fixed;
+    pointer-events: none;
+    width: 5px;
+    height: 5px;
+    background: var(--neon-green);
+    border-radius: 50%;
+    z-index: 9999;
+}
+
+.product-card {
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.product-info, .product-visual {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-info {
+    transform: translateZ(20px);
+}
+
+.product-card:hover .product-visual {
+    transform: translateZ(40px);
+}
+
+/* Smooth transitions for all animated elements */
+* {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhanced button hover effects */
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 200, 83, 0.3);
+}
+
+/* Product card reflection effect */
+.product-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transform: skewX(-15deg);
+    transition: 0.5s;
+}
+
+.product-card:hover::after {
+    left: 100%;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Additional particle styles */
+.particle {
+    mix-blend-mode: screen;
+    background: var(--neon-green);
+    border-radius: 50%;
+}
