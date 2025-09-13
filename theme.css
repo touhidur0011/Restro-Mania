@@ -1,0 +1,35 @@
+/* Color theme variables */
+:root {
+    --primary: #FF6B35;
+    --secondary: #F7931E;
+    --dark: #1A1A2E;
+    --light: #F5F5F5;
+    --accent: #16213E;
+    --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Base theme overrides */
+body {
+    background: var(--dark);
+    color: var(--light);
+}
+
+.logo {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-title {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+}
+
+.product-card {
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(247, 147, 30, 0.05));
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Engine Model</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="engine-viewer.js"></script>
+    <script src="slide-controller.js"></script>
+    <style>
+        .engine-viewer {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            background: var(--dark);
+            overflow: hidden;
+        }
+
+        .engine-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .engine-controls {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+            z-index: 10;
+        }
+
+        .control-btn {
+            padding: 12px 24px;
+            background: rgba(255, 107, 53, 0.2);
+            border: 1px solid var(--primary);
+            color: var(--light);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .control-btn:hover {
+            background: var(--primary);
+        }
+
+        .part-label {
+            position: absolute;
+            background: rgba(255, 107, 53, 0.9);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .engine-loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--primary);
+            font-size: 1.2rem;
+            z-index: 5;
+        }
+
+        .progress-bar {
+            width: 200px;
+            height: 2px;
+            background: rgba(255, 107, 53, 0.2);
+            margin-top: 10px;
+        }
+
+        .progress {
+            width: 0%;
+            height: 100%;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        /* Slide effect styles */
+        .slide-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform: translateX(100%);
+            transition: transform 1s cubic-bezier(0.7, 0, 0.3, 1);
+        }
+
+        .slide.active {
+            transform: translateX(0);
+        }
+
+        .slide.previous {
+            transform: translateX(-100%);
+        }
+
+        /* Custom cursor */
+        .custom-cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transition: transform 0.1s ease;
+        }
+
+        .custom-cursor.hover {
+            transform: scale(1.5);
+            background: rgba(255, 107, 53, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    
+    <div class="slide-container">
+        <div class="slide active">
+            <div class="engine-viewer">
+                <canvas class="engine-canvas"></canvas>
+                <div class="engine-loading">
+                    Loading Engine Model
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="engine-controls">
+                    <button class="control-btn" data-action="explode">Explode View</button>
+                    <button class="control-btn" data-action="rotate">Rotate</button>
+                    <button class="control-btn" data-action="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Custom cursor
+        const cursor = document.querySelector('.custom-cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.querySelectorAll('.control-btn').forEach(btn => {
+            btn.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+            btn.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+        });
+    </script>
+</body>
+</html>

@@ -6,7 +6,11 @@
     <title>Restro Mania - Revolutionary Restaurant Solutions</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="theme.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <div class="loader" id="loader">
@@ -39,10 +43,10 @@
         <div class="nav-container">
             <div class="logo">Restro Mania</div>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="hover-link">Home</a></li>
+                <li><a href="#products" class="hover-link">Products</a></li>
+                <li><a href="#features" class="hover-link">Features</a></li>
+                <li><a href="#contact" class="hover-link">Contact</a></li>
             </ul>
             <div class="mobile-menu-btn" id="mobileMenu">
                 <span></span>
@@ -62,8 +66,23 @@
             <h1>Welcome to Restro Mania</h1>
             <p class="tagline">Revolutionizing Restaurant Management Solutions</p>
             <div class="cta-buttons">
-                <a href="#products" class="btn btn-primary">Explore Products</a>
-                <a href="#contact" class="btn btn-secondary">Get Started</a>
+                <a href="#products" class="btn-3d">
+                    <span>Explore Products</span>
+                    <span>Explore Products</span>
+                    <span>Explore Products</span>
+                    <span>Explore Products</span>
+                </a>
+                <a href="#contact" class="blob-btn">
+                    Get Started
+                    <span class="blob-btn__inner">
+                        <span class="blob-btn__blobs">
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                            <span class="blob-btn__blob"></span>
+                        </span>
+                    </span>
+                </a>
             </div>
         </div>
     </section>
@@ -171,35 +190,47 @@
         <p class="section-subtitle">Industry-leading features for modern restaurants</p>
         
         <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">📊</div>
-                <h3>Real-time Analytics</h3>
-                <p>Monitor your restaurant's performance with live dashboards and instant insights into sales, inventory, and customer patterns.</p>
+            <div class="feature-card holographic-card">
+                <div class="feature-content">
+                    <div class="feature-icon">📊</div>
+                    <h3>Real-time Analytics</h3>
+                    <p>Monitor your restaurant's performance with live dashboards and instant insights into sales, inventory, and customer patterns.</p>
+                </div>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">☁️</div>
-                <h3>Cloud Integration</h3>
-                <p>Access your data from anywhere with secure cloud storage and automatic backups. Never lose important business data.</p>
+            <div class="feature-card holographic-card">
+                <div class="feature-content">
+                    <div class="feature-icon">☁️</div>
+                    <h3>Cloud Integration</h3>
+                    <p>Access your data from anywhere with secure cloud storage and automatic backups. Never lose important business data.</p>
+                </div>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">🔒</div>
-                <h3>Bank-level Security</h3>
-                <p>Your data is protected with enterprise-grade encryption and security protocols to ensure complete privacy and protection.</p>
+            <div class="feature-card holographic-card">
+                <div class="feature-content">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Bank-level Security</h3>
+                    <p>Your data is protected with enterprise-grade encryption and security protocols to ensure complete privacy and protection.</p>
+                </div>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">📱</div>
-                <h3>Multi-platform Support</h3>
-                <p>Works seamlessly across Windows, Mac, iOS, Android, and web browsers for maximum flexibility and accessibility.</p>
+            <div class="feature-card holographic-card">
+                <div class="feature-content">
+                    <div class="feature-icon">📱</div>
+                    <h3>Multi-platform Support</h3>
+                    <p>Works seamlessly across Windows, Mac, iOS, Android, and web browsers for maximum flexibility and accessibility.</p>
+                </div>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">🚀</div>
-                <h3>Lightning Fast</h3>
-                <p>Optimized performance ensures smooth operations even during peak hours with instant response times.</p>
+            <div class="feature-card holographic-card">
+                <div class="feature-content">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Optimized performance ensures smooth operations even during peak hours with instant response times.</p>
+                </div>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">🎯</div>
-                <h3>24/7 Support</h3>
-                <p>Our dedicated support team is always available to help you with any questions or technical assistance you need.</p>
+            <div class="feature-card holographic-card">
+                <div class="feature-content">
+                    <div class="feature-icon">🎯</div>
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated support team is always available to help you with any questions or technical assistance you need.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -221,20 +252,42 @@
             <div class="form-group">
                 <textarea rows="5" placeholder="Tell us about your needs..." required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Request Demo</button>
+            <button type="submit" class="btn btn-primary"><span>Request Demo</span></button>
         </form>
     </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: none;">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+            </filter>
+        </defs>
+    </svg>
 
     <footer>
         <div class="footer-content">
             <div class="logo">Restro Mania</div>
             <p>© 2024 Restro Mania. All rights reserved.</p>
-            <div class="social-links">
-                <div class="social-link">f</div>
-                <div class="social-link">t</div>
-                <div class="social-link">in</div>
-                <div class="social-link">ig</div>
-            </div>
+            <ul class="social-links">
+                <li style="--i:#3b5998;--j:#304d8a">
+                    <span class="icon"><ion-icon name="logo-facebook"></ion-icon></span>
+                    <span class="title">Facebook</span>
+                </li>
+                <li style="--i:#1DA1F2;--j:#0d8bd9">
+                    <span class="icon"><ion-icon name="logo-twitter"></ion-icon></span>
+                    <span class="title">Twitter</span>
+                </li>
+                <li style="--i:#0077b5;--j:#005582">
+                    <span class="icon"><ion-icon name="logo-linkedin"></ion-icon></span>
+                    <span class="title">LinkedIn</span>
+                </li>
+                <li style="--i:#db4437;--j:#c31c0d">
+                    <span class="icon"><ion-icon name="logo-google"></ion-icon></span>
+                    <span class="title">Google</span>
+                </li>
+            </ul>
         </div>
     </footer>
 
