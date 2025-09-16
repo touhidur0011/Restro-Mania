@@ -257,11 +257,33 @@ sliderDots.forEach((dot, index) => {
     dot.addEventListener('click', () => showSlide(index));
 });
 
-// Auto-play slider
-setInterval(() => {
-    const newIndex = currentSlide < productCards.length - 1 ? currentSlide + 1 : 0;
-    showSlide(newIndex);
-}, 5000);
+// Auto-play slider with pause functionality
+let sliderInterval;
+let isPaused = false;
+
+function startSliderInterval() {
+    sliderInterval = setInterval(() => {
+        if (!isPaused) {
+            const newIndex = currentSlide < productCards.length - 1 ? currentSlide + 1 : 0;
+            showSlide(newIndex);
+        }
+    }, 3000);
+}
+
+// Pause slider on cube hover
+document.querySelectorAll('.cube-button').forEach(cube => {
+    cube.addEventListener('mouseenter', () => {
+        isPaused = true;
+        clearInterval(sliderInterval);
+    });
+
+    cube.addEventListener('mouseleave', () => {
+        isPaused = false;
+        startSliderInterval();
+    });
+});
+
+startSliderInterval();
 
 // Navbar scroll effect
 window.addEventListener('scroll', () => {
