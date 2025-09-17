@@ -212,6 +212,10 @@
     }
     
     .cube-button {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
         width: 100px;
         height: 100px;
         margin: 10px;
@@ -230,6 +234,29 @@
     .windows .left { transform: translateX(-50px) rotateY(-90deg); }
     .windows .top { transform: translateY(-50px) rotateX(90deg); }
     .windows .bottom { transform: translateY(50px) rotateX(-90deg); }
+<<<<<<< HEAD
+=======
+=======
+        width: 150px;
+        height: 150px;
+        margin: 30px;
+    }
+    
+    .demo-video .front { transform: translateZ(75px); }
+    .demo-video .back { transform: translateZ(-75px) rotateY(180deg); }
+    .demo-video .right { transform: translateX(75px) rotateY(90deg); }
+    .demo-video .left { transform: translateX(-75px) rotateY(-90deg); }
+    .demo-video .top { transform: translateY(-75px) rotateX(90deg); }
+    .demo-video .bottom { transform: translateY(75px) rotateX(-90deg); }
+    
+    .windows .front { transform: translateZ(75px); }
+    .windows .back { transform: translateZ(-75px) rotateY(180deg); }
+    .windows .right { transform: translateX(75px) rotateY(90deg); }
+    .windows .left { transform: translateX(-75px) rotateY(-90deg); }
+    .windows .top { transform: translateY(-75px) rotateX(90deg); }
+    .windows .bottom { transform: translateY(75px) rotateX(-90deg); }
+>>>>>>> 48311d147b828d45cfbe7cc058d0ce03bd77684e
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
     
     .mac .front { transform: translateZ(75px); }
     .mac .back { transform: translateZ(-75px) rotateY(180deg); }
