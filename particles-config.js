@@ -1,22 +1,66 @@
+<<<<<<< HEAD
 // Add this code to your particles-config.js file (replace the existing content)
+=======
+<<<<<<< HEAD
+// Add this code to your particles-config.js file (replace the existing content)
+=======
+<<<<<<< HEAD
+// Add this code to your particles-config.js file (replace the existing content)
+=======
+// Vincent Garreau particles.js configuration with mouse interaction
+// Based on https://vincentgarreau.com/particles.js/
+>>>>>>> 48311d147b828d45cfbe7cc058d0ce03bd77684e
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
+>>>>>>> d3a76a18773dc733b89ec9e0f9c2dbfc1fddc141
 
 particlesJS("particles-js", {
   "particles": {
     "number": {
+<<<<<<< HEAD
       "value": 100,
+=======
+<<<<<<< HEAD
+      "value": 100,
+=======
+<<<<<<< HEAD
+      "value": 100,
+=======
+      "value": 80,
+>>>>>>> 48311d147b828d45cfbe7cc058d0ce03bd77684e
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
+>>>>>>> d3a76a18773dc733b89ec9e0f9c2dbfc1fddc141
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
     "color": {
+<<<<<<< HEAD
       "value": ["#ffffff", "#00ff88", "#0088ff", "#ff0088"]
+=======
+<<<<<<< HEAD
+      "value": ["#ffffff", "#00ff88", "#0088ff", "#ff0088"]
+=======
+<<<<<<< HEAD
+      "value": ["#ffffff", "#00ff88", "#0088ff", "#ff0088"]
+=======
+      "value": "#ffffff"
+>>>>>>> 48311d147b828d45cfbe7cc058d0ce03bd77684e
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
+>>>>>>> d3a76a18773dc733b89ec9e0f9c2dbfc1fddc141
     },
     "shape": {
       "type": "circle",
       "stroke": {
         "width": 0,
         "color": "#000000"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
+>>>>>>> d3a76a18773dc733b89ec9e0f9c2dbfc1fddc141
       }
     },
     "opacity": {
@@ -24,16 +68,58 @@ particlesJS("particles-js", {
       "random": true,
       "anim": {
         "enable": true,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+>>>>>>> 48311d147b828d45cfbe7cc058d0ce03bd77684e
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
+>>>>>>> d3a76a18773dc733b89ec9e0f9c2dbfc1fddc141
         "speed": 1,
         "opacity_min": 0.1,
         "sync": false
       }
     },
     "size": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
+>>>>>>> d3a76a18773dc733b89ec9e0f9c2dbfc1fddc141
       "value": 4,
       "random": true,
       "anim": {
         "enable": true,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+>>>>>>> 48311d147b828d45cfbe7cc058d0ce03bd77684e
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
+>>>>>>> d3a76a18773dc733b89ec9e0f9c2dbfc1fddc141
         "speed": 40,
         "size_min": 0.1,
         "sync": false
@@ -41,13 +127,38 @@ particlesJS("particles-js", {
     },
     "line_linked": {
       "enable": true,
+<<<<<<< HEAD
       "distance": 200,
       "color": "#ffffff",
       "opacity": 0.5,
+=======
+<<<<<<< HEAD
+      "distance": 200,
+      "color": "#ffffff",
+      "opacity": 0.5,
+=======
+<<<<<<< HEAD
+      "distance": 200,
+      "color": "#ffffff",
+      "opacity": 0.5,
+=======
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+>>>>>>> 48311d147b828d45cfbe7cc058d0ce03bd77684e
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
+>>>>>>> d3a76a18773dc733b89ec9e0f9c2dbfc1fddc141
       "width": 1
     },
     "move": {
       "enable": true,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
+>>>>>>> d3a76a18773dc733b89ec9e0f9c2dbfc1fddc141
       "speed": 3,
       "direction": "none",
       "random": true,
@@ -56,12 +167,35 @@ particlesJS("particles-js", {
       "bounce": true,
       "attract": {
         "enable": true,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+>>>>>>> 48311d147b828d45cfbe7cc058d0ce03bd77684e
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
+>>>>>>> d3a76a18773dc733b89ec9e0f9c2dbfc1fddc141
         "rotateX": 600,
         "rotateY": 1200
       }
     }
   },
   "interactivity": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
+>>>>>>> d3a76a18773dc733b89ec9e0f9c2dbfc1fddc141
     "detect_on": "window",
     "events": {
       "onhover": {
@@ -71,17 +205,53 @@ particlesJS("particles-js", {
       "onclick": {
         "enable": true,
         "mode": "repulse"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+>>>>>>> 48311d147b828d45cfbe7cc058d0ce03bd77684e
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
+>>>>>>> d3a76a18773dc733b89ec9e0f9c2dbfc1fddc141
       },
       "resize": true
     },
     "modes": {
       "grab": {
+<<<<<<< HEAD
         "distance": 200,
+=======
+<<<<<<< HEAD
+        "distance": 200,
+=======
+<<<<<<< HEAD
+        "distance": 200,
+=======
+        "distance": 400,
+>>>>>>> 48311d147b828d45cfbe7cc058d0ce03bd77684e
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
+>>>>>>> d3a76a18773dc733b89ec9e0f9c2dbfc1fddc141
         "line_linked": {
           "opacity": 1
         }
       },
       "bubble": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
+>>>>>>> d3a76a18773dc733b89ec9e0f9c2dbfc1fddc141
         "distance": 250,
         "size": 8,
         "duration": 2,
@@ -90,6 +260,22 @@ particlesJS("particles-js", {
       },
       "repulse": {
         "distance": 300,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+>>>>>>> 48311d147b828d45cfbe7cc058d0ce03bd77684e
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
+>>>>>>> d3a76a18773dc733b89ec9e0f9c2dbfc1fddc141
         "duration": 0.4
       },
       "push": {
@@ -103,6 +289,13 @@ particlesJS("particles-js", {
   "retina_detect": true
 });
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
+>>>>>>> d3a76a18773dc733b89ec9e0f9c2dbfc1fddc141
 // Enhanced Custom mouse interaction
 let mouseX = 0;
 let mouseY = 0;
@@ -230,6 +423,14 @@ document.addEventListener('touchend', function() {
   }, 300);
 });
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 48311d147b828d45cfbe7cc058d0ce03bd77684e
+>>>>>>> 381f4671afadd19af06d3d6a5c59c789e3c2399d
+>>>>>>> d3a76a18773dc733b89ec9e0f9c2dbfc1fddc141
 // Responsive particle count for performance
 function updateParticleCount() {
   const width = window.innerWidth;
