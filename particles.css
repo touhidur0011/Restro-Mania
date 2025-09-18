@@ -1,3 +1,22 @@
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none; /* Ensure particles don't block interactions */
+}
+
+#particles-js canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Canvas should not block hover events */
+}
+
 .particles-container {
     position: fixed;
     top: 0;

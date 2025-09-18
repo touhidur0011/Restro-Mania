@@ -1,0 +1,55 @@
+/* Hover Effects Override to ensure particles don't interfere */
+
+/* Ensure all interactive elements have proper z-index and pointer events */
+.btn, .btn-3d, .blob-btn, .cube-button, .feature-card, .social-links li, nav a, .cta-buttons a {
+    position: relative;
+    z-index: 10;
+    pointer-events: auto !important;
+}
+
+/* Specific fix for 3D buttons */
+.btn-3d {
+    z-index: 100;
+}
+
+/* Specific fix for blob buttons */
+.blob-btn {
+    z-index: 100;
+}
+
+/* Specific fix for cube buttons */
+.cube-button {
+    z-index: 100;
+    transform-style: preserve-3d;
+}
+
+/* Ensure feature cards are interactive */
+.feature-card.holographic-card {
+    z-index: 50;
+}
+
+/* Ensure social links are interactive */
+.social-links li {
+    z-index: 50;
+}
+
+/* Navigation links */
+.nav-links a {
+    z-index: 50;
+}
+
+/* Ensure particles stay behind interactive elements */
+#particles-js {
+    z-index: 1 !important;
+    pointer-events: none !important;
+}
+
+#particles-js canvas {
+    pointer-events: none !important;
+}
+
+/* Force hover effects to work */
+.btn:hover, .btn-3d:hover, .blob-btn:hover, .cube-button:hover, 
+.feature-card.holographic-card:hover, .social-links li:hover {
+    z-index: 200;
+}
